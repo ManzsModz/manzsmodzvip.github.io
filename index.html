@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hacked by ManzsMoz</title>
+<style>
+  body {
+    margin: 0;
+    background-color: black;
+    color: #00FF00;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+  }
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  h1 {
+    font-size: 3em;
+    text-shadow: 0 0 10px #00FF00;
+    animation: glow 1s infinite alternate;
+  }
+  p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  img {
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #00FF00;
+    box-shadow: 0 0 20px #00FF00;
+  }
+  @keyframes glow {
+    from { text-shadow: 0 0 10px #00FF00; }
+    to { text-shadow: 0 0 20px #00FF00; }
+  }
+  .buttons {
+    margin-top: 20px;
+  }
+  button {
+    background-color: #00FF00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  button:hover {
+    background-color: #009900;
+  }
+</style>
+</head>
+<body>
+
+<div class="center">
+  <img src="manzs.jpg" alt="Anonymous">
+  <h1>Hacked by ManzsModz</h1>
+  <p>Perkenalkan nama saya adalah ManzsModzVip, saya bukanlah raja, saya hanya seorang pemula yang tidak tahu apa-apa!</p>
+
+  <div class="buttons">
+    <button onclick="playSound()">Play Sound</button>
+    <button onclick="stopSound()">Stop Sound</button>
+    <button onclick="goToTelegram()">Contact Telegram</button>
+  </div>
+
+  <p style="margin-top: 20px;">Contact: <a href="https://t.me/ManzsModzVip" style="color: #00FF00; text-decoration: underline;">https://t.me/ManzsModzVip</a></p>
+</div>
+
+<audio id="bg-audio" loop>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById('bg-audio');
+
+  function playSound() {
+    audio.play();
+  }
+
+  function stopSound() {
+    audio.pause();
+    audio.currentTime = 0;
+  }
+
+  function goToTelegram() {
+    window.location.href = 'https://t.me/ManzsModzVip';
+  }
+</script>
+
+</body>
+</html>
